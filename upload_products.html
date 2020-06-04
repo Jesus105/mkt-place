@@ -1,0 +1,43 @@
+
+<div class="row">
+    <div class="col-12 col-md-6 offset-md-3">
+        <form class="forms border rounded-lg p-3">
+            <div class="form-group">
+                <label for="product-name">Nombre del producto</label>
+                <input type="text" class="form-control" id="product-name" placeholder="Ingresa el nombre de tu producto.">
+                <small id="emailHelp" class="form-text text-muted">Por favor se especifico.</small>
+            </div>
+            <div class="form-group">
+                <label for="City">Ciudad</label>
+                <input placeholder="Ingresa la ciudad de procedencia." type="text" class="form-control" id="City">
+            </div>
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input placeholder="Ingresa el precio del producto." type="number" class="form-control" id="price">
+            </div>
+            <div class="form-group">
+                <label for="category">Categoria</label>
+                <input placeholder="Ingresa la categoria del producto." type="text" class="form-control" id="category">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripción del producto.</label>
+                <textarea class="form-control" placeholder="Ingresa una descripción del producto" id="description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="photo">Foto</label>
+                <input placeholder="Ingresa el precio del producto." type="number" class="form-control" id="photo">
+            </div>
+            <a onclick="addproduct()"><div class="btn btn-primary">Submit</div></a>
+        </form>
+
+        <div id="alerta" class="d-none my-5 alert alert-success" role="alert">
+            <h4 class="alert-heading">¡Bien hecho!</h4>
+            <p>Tu producto se ha cargado de manera exitosa. Ahora puedes seguir navegando</p>
+            <hr>
+            <a onclick="load_content('products.html'); active_link(p);"><button type="button" class="btn btn-primary mb-2 btn-block">Ver catalogo</button></a>
+            <a onclick="load_content('upload_products.html');"><button type="button" class="btn btn-secondary btn-block">Subir otro producto</button></a>
+        </div>
+
+    </div>
+</div> 
+ 
